@@ -8,6 +8,7 @@
     "email": "emil@skogsund.se"
   },
   "skills": ["./skills"],
+  "agents": ["./agents"],
   "channels": [
     {
       "server": "skogai-core",
