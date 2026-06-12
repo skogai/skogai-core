@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "skogai-core",
+  "version": "0.1.1",
+  "description": "skogai-core plugin",
+  "author": {
+    "name": "skogix",
+    "email": "emil@skogsund.se"
+  },
+  "skills": ["./skills"],
+  "channels": [
+    {
+      "server": "skogai-core",
+      "displayName": "skogai-core"
+    }
+  ]
+}
