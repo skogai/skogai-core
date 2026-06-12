@@ -1,0 +1,38 @@
+{
+  "name": "skogai-core",
+  "description": "core plugins for skogai",
+  "owner": {
+    "name": "skogix",
+    "email": "emil@skogsund.se"
+  },
+  "metadata": {
+    "pluginRoot": "./"
+  },
+  "plugins": [
+    {
+      "name": "skog-example",
+      "version": "0.0.1",
+      "description": "example-mcp",
+      "source": "./",
+      "mcpServers": {
+        "skogai-hub": {
+          "url": "http://localhost:9999/mcp",
+          "type": "sse"
+        }
+      },
+      "strict": false
+    },
+    {
+      "name": "skogai-example",
+      "version": "0.0.1",
+      "description": "example",
+      "source": "./plugins/skogai-chat",
+      "agents": ["./agents/schema-converter.md"],
+      "skills": [
+        "./skills/skogai-core/SKILL.md",
+        "./todo/skills/skogai-gita/SKILL.md"
+      ],
+      "strict": false
+    }
+  ]
+}

@@ -6,6 +6,7 @@
     "type": {
       "type": "string",
       "enum": [
+        "skill",
         "router",
         "workflow",
         "reference",

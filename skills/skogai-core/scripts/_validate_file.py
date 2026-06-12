@@ -31,6 +31,7 @@ SCHEMA_DIR = Path(sys.argv[1]).resolve()
 FILE = Path(sys.argv[2]).resolve()
 
 TYPE_TO_SCHEMA = {
+    "skill":     "skill.schema.json",
     "router":    "router.schema.json",
     "workflow":  "workflow.schema.json",
     "reference": "reference.schema.json",

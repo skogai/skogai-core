@@ -7,6 +7,7 @@ JSON Schema (draft 2020-12) definitions for skogai routing framework documents.
 | `defs.schema.json`        | shared `$defs` (slug, path, tag, xmlSection, link, heading, listEntry) | —                                                                                           |
 | `frontmatter.schema.json` | YAML frontmatter block; requires `type`                                | `type`                                                                                      |
 | `document.schema.json`    | normalized document envelope                                           | `path`, `type`, `sections`                                                                  |
+| `skill.schema.json`       | Claude Code SKILL.md entrypoint                                        | `name`, `description` in frontmatter; `<objective>`, `<routing>` sections                  |
 | `router.schema.json`      | routing file variant                                                   | `<objective>`, `<routing>` sections                                                         |
 | `workflow.schema.json`    | workflow endpoint                                                      | `<objective>`, `<steps>`, `<validation>` sections                                           |
 | `reference.schema.json`   | reference endpoint                                                     | `<overview>` section                                                                        |
@@ -22,6 +23,7 @@ JSON Schema (draft 2020-12) definitions for skogai routing framework documents.
 
 | frontmatter `type` | schema file             |
 | ------------------ | ----------------------- |
+| `skill`            | `skill.schema.json`     |
 | `router`           | `router.schema.json`    |
 | `workflow`         | `workflow.schema.json`  |
 | `reference`        | `reference.schema.json` |
