@@ -1,5 +1,6 @@
 {
   "name": "skogai-core",
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
   "description": "core plugins for skogai",
   "owner": {
     "name": "skogix",
@@ -12,7 +13,7 @@
     {
       "name": "skog-example",
       "version": "0.0.1",
-      "description": "example-mcp",
+      "description": "example-test",
       "source": "./",
       "mcpServers": {
         "skogai-hub": {
