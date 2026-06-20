@@ -10,7 +10,7 @@ This repository is a Claude Code plugin marketplace. `.claude-plugin/marketplace
 - `tests/` is the `skogai-tests` plugin and owns Bats suites, grouped by plugin (`tests/skogai-hooks/`, `tests/skogai-jq/`).
 - `agents/` contains reusable agent definitions. Treat `todo/` and `todo2/` as migration material, not active plugin surfaces.
 
-Read the nearest nested guidance when present, especially `tests/CLAUDE.md` for test scope.
+Read the nearest nested guidance when present, especially `tests/AGENTS.md` for test scope and `tests/TESTING.md` for validation strategy.
 
 ## Build, Test, and Development Commands
 
