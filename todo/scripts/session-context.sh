@@ -5,3 +5,4 @@
 
 # Add context here — stdout gets injected once at session start
 # Example: echo "Git status: $(git status --short 2>/dev/null | head -5)"
+echo "Git status: $(git status --short 2>/dev/null | head -5)"
