@@ -11,34 +11,9 @@
   },
   "plugins": [
     {
-      "name": "skog-example",
-      "version": "0.0.1",
-      "description": "example-test",
-      "source": "./",
-      "mcpServers": {
-        "skogai-hub": {
-          "url": "http://localhost:9999/mcp",
-          "type": "sse"
-        }
-      },
-      "strict": false
-    },
-    {
-      "name": "skogai-example",
-      "version": "0.0.1",
-      "description": "example",
-      "source": "./plugins/skogai-chat",
-      "agents": ["./agents/schema-converter.md"],
-      "skills": [
-        "./skills/skogai-core/SKILL.md",
-        "./todo/skills/skogai-gita/SKILL.md"
-      ],
-      "strict": false
-    },
-    {
       "name": "skogai-tests",
       "source": "./tests",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "description": "Bats testing skill and per-plugin test suites for skogai plugins (hooks + jq focus)",
       "category": "testing",
       "strict": false
@@ -46,7 +21,7 @@
     {
       "name": "skogai-jq",
       "source": "./plugins/skogai-jq",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "description": "Schema-driven jq/JSON transformation library",
       "category": "data",
       "strict": false
@@ -54,7 +29,7 @@
     {
       "name": "skogai-hooks",
       "source": "./plugins/skogai-hooks",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "description": "Reusable Claude Code lifecycle hooks (session, tool guards, stop gates)",
       "category": "automation",
       "strict": false
