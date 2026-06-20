@@ -34,6 +34,30 @@
         "./todo/skills/skogai-gita/SKILL.md"
       ],
       "strict": false
+    },
+    {
+      "name": "skogai-tests",
+      "source": "./tests",
+      "version": "0.0.1",
+      "description": "Bats testing skill and per-plugin test suites for skogai plugins (hooks + jq focus)",
+      "category": "testing",
+      "strict": false
+    },
+    {
+      "name": "skogai-jq",
+      "source": "./plugins/skogai-jq",
+      "version": "0.0.1",
+      "description": "Schema-driven jq/JSON transformation library",
+      "category": "data",
+      "strict": false
+    },
+    {
+      "name": "skogai-hooks",
+      "source": "./plugins/skogai-hooks",
+      "version": "0.0.1",
+      "description": "Reusable Claude Code lifecycle hooks (session, tool guards, stop gates)",
+      "category": "automation",
+      "strict": false
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "name": "skogai-jq",
+  "version": "0.0.1",
+  "description": "Schema-driven jq/JSON transformation library",
+  "author": {
+    "name": "skogix",
+    "email": "emil@skogsund.se"
+  },
+  "license": "MIT",
+  "keywords": ["skogai", "jq", "json"]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "skogai-tests",
+  "version": "0.0.1",
+  "description": "Bats testing skill and per-plugin test suites for skogai plugins (hooks + jq focus)",
+  "author": {
+    "name": "skogix",
+    "email": "emil@skogsund.se"
+  },
+  "license": "MIT",
+  "keywords": ["skogai", "bats", "testing"]
+}
