@@ -145,11 +145,9 @@ skogai-core documents are markdown files with:
 - **Dates are quoted strings.** Always write `date: "2026-06-11"`, never
   `date: 2026-06-11`. Unquoted dates parse as YAML date objects and fail with
   `is not of type 'string'`. Pattern required: `^[0-9]{4}-[0-9]{2}-[0-9]{2}$`.
-- `decisionStatus` must be one of: `accepted`, `rejected`, `superseded`,
-  `deprecated`. Map old `## Status` headings (e.g. "Accepted", "Proposed",
-  "Superseded") onto this enum — "Proposed" usually maps to `accepted` unless
-  context says otherwise; flag ambiguous cases to the user rather than guess
-  silently.
+- `decisionStatus` must be one of: `proposed`, `accepted`, `rejected`,
+  `superseded`, `deprecated`. Map old `## Status` headings directly onto this
+  enum and flag any unrecognized status rather than guessing silently.
 - `deciders` may be a string or a non-empty array of strings.
 - The `type` enum is **closed**. If a file's actual content doesn't fit any of
   the ten types, **do not invent a new type** (e.g. `type: harness`,

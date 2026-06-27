@@ -109,7 +109,7 @@
     },
     "decisionStatus": {
       "type": "string",
-      "enum": ["accepted", "rejected", "superseded", "deprecated"]
+      "enum": ["proposed", "accepted", "rejected", "superseded", "deprecated"]
     },
     "listEntry": {
       "type": "object",
