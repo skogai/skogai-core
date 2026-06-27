@@ -155,6 +155,9 @@ if fm is None:
     fm = {"type": inferred}
 
 doc_type = fm.get("type")
+if not doc_type and FILE.name == "SKILL.md":
+    doc_type = "skill"
+    fm = {**fm, "type": doc_type}
 if not doc_type:
     warnings.append("frontmatter missing 'type' field")
     print(f"WARN  {FILE.name}: " + "; ".join(warnings))

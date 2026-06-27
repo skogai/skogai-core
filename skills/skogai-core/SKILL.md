@@ -1,5 +1,4 @@
 ---
-type: skill
 name: skogai-routing
 description: Routes information through a progressive framework of routing files, workflows, references, templates, and scripts. Use as the starting point when deciding where guidance belongs, which endpoint should handle a request, or how to structure an agent-facing knowledge system.
 ---
