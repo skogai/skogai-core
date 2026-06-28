@@ -1,33 +1,38 @@
 ---
 type: skill
 name: skogai-tests
-description: Writes and runs bats test suites for skogai plugins. Use when writing tests for hook scripts or jq transforms, debugging failing bats tests, or adding a test suite for a new plugin.
+description: Routes and validates SkogAI testing across generated transform tests, Bats runtime contracts, hook integration tests, and real-history corpus passes.
 ---
 
 <objective>
-Own bats-based testing for skogai plugins. Tests live in this plugin, organized as one subfolder per plugin under test (`tests/skogai-hooks/`, `tests/skogai-jq/`). The current focus is the hooks, tested together with jq.
+Route test work to the smallest layer that proves the behavior, then run every broader layer required by the change. `tests/AGENTS.md` owns local rules and `tests/TESTING.md` owns the layered strategy.
 </objective>
 
 <quick_start>
-1. Find or create the subfolder for the plugin under test.
-2. Write a `.bats` file using the run + assert pattern, loading the shared `test-helper`.
-3. Run with `bats tests/**/*.bats`.
+1. Read `tests/AGENTS.md`, then use `tests/TESTING.md` to identify the owning test layer.
+2. Add the smallest behavioral regression test: transform fixture, Bats runtime contract, hook integration case, or sanitized corpus fixture.
+3. Run the focused test while iterating, then the broader validation required by the cadence table.
 </quick_start>
 
 <routing>
 
 | intent | endpoint |
 | --- | --- |
+| Testing rules and commands | `tests/AGENTS.md` |
+| Layer selection and validation cadence | `tests/TESTING.md` |
 | Test a hook script | `tests/skogai-hooks/` |
-| Test a jq transform | `tests/skogai-jq/` |
-| What to test and what not to test | `tests/CLAUDE.md` |
-| Run the full suite | `/run-tests` |
+| Test the shared jq runtime | `tests/skogai-jq/` |
+| Test one jq transform | `plugins/skogai-jq/transforms/<name>/` |
+| Run Bats suites | `/run-tests` |
+| Validate real history | Corpus runner documented by the owning migration or release workflow |
 
 </routing>
 
 <success_criteria>
 
-- Tests assert content selection and output shape via jq extraction, not grep.
-- No tests that merely re-verify the structured IO contract or that bash works.
+- Tests exercise public scripts and assert meaningful content, selection, routing, or output shape.
+- Generated expectations are regenerated from their owner rather than hand-edited.
+- Corpus failures are sanitized and reduced into permanent fast fixtures.
+- Validation reports distinguish focused, generated, Bats, and corpus results.
 
 </success_criteria>
