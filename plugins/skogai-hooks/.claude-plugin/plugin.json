@@ -1,11 +1,10 @@
 {
   "name": "skogai-hooks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Reusable Claude Code lifecycle hooks (session, tool guards, stop gates)",
   "author": {
     "name": "skogix",
     "email": "emil@skogsund.se"
   },
-  "license": "MIT",
   "keywords": ["skogai", "hooks", "automation"]
 }

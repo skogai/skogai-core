@@ -1,7 +1,7 @@
 ---
 type: skill
 name: skogai-jq
-description: Shared jq/JSON utilities and schema-driven transformations. Use when handling hook JSON I/O, producing hook responses, adding a reusable jq transform, or validating transform schemas.
+description: This skill should be used when the user asks to "parse hook JSON input", "build a hook response", "add a jq transform", "write a transform schema", or needs shared jq/JSON utilities for hook I/O or schema-driven transformations.
 ---
 
 <objective>

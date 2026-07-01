@@ -1,7 +1,7 @@
 ---
 type: skill
 name: skogai-tests
-description: Routes and validates SkogAI testing across generated transform tests, Bats runtime contracts, hook integration tests, and real-history corpus passes.
+description: This skill should be used when the user asks to "run tests", "add a test", "test a hook script", "test a jq transform", "validate a transform schema", or needs to route testing work across generated transform tests, Bats runtime contracts, hook integration tests, or real-history corpus passes.
 ---
 
 <objective>

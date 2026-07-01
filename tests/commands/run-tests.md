@@ -1,5 +1,6 @@
 ---
 description: Run the skogai bats test suites
+argument-hint: [plugin-name]
 ---
 
 Run the bats test suites in this repository.
