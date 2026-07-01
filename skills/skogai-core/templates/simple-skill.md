@@ -1,7 +1,10 @@
 ---
-name: [skill-name]
-description: [Third-person description of what this small capability does and when to use it.]
+name: skill-name
+description: "[Third-person description of what this small capability does and when to use it.]"
+type: template
 ---
+
+<template>
 
 <objective>
 [State the small capability this routing file owns.]
@@ -27,3 +30,5 @@ description: [Third-person description of what this small capability does and wh
 - [No broader framework content is loaded unnecessarily]
 
 </success_criteria>
+
+</template>
