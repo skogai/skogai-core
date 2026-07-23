@@ -14,7 +14,7 @@ Route test work to the smallest layer that proves the behavior, then run every b
 3. Run the focused test while iterating, then the broader validation required by the cadence table.
 </quick_start>
 
-<routing>
+<routes>
 
 | intent | endpoint |
 | --- | --- |
@@ -26,7 +26,7 @@ Route test work to the smallest layer that proves the behavior, then run every b
 | Run Bats suites | `/run-tests` |
 | Validate real history | Corpus runner documented by the owning migration or release workflow |
 
-</routing>
+</routes>
 
 <success_criteria>
 

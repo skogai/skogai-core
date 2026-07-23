@@ -86,7 +86,7 @@ skill, the schemas, or the validator.** The router below is @-linked relative to
 
 @../skills/skogai-core/SKILL.md
 
-That router's `<routing>` table is your map. From it, follow:
+That router's `<routes>` table is your map. From it, follow:
 
 - **"Validate files against schemas"** → the validate-schema workflow — it gives
   the exact command to run the validator (relative to the skill root, the

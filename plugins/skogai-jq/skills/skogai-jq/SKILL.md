@@ -14,7 +14,7 @@ Own tested JSON utilities for hooks and reusable jq transforms. The hook runtime
 3. Add fixtures or Bats coverage for the changed behavior and run the relevant test suite.
 </quick_start>
 
-<routing>
+<routes>
 
 | intent | endpoint |
 | --- | --- |
@@ -23,7 +23,7 @@ Own tested JSON utilities for hooks and reusable jq transforms. The hook runtime
 | Per-transform test convention | `transforms/<name>/test.sh` with 8-10 inputs, falsy coverage |
 | Bats suites for this plugin | `tests/skogai-jq/` (skogai-tests plugin) |
 
-</routing>
+</routes>
 
 <success_criteria>
 
