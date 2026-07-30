@@ -1,5 +1,5 @@
 {
-  "name": "skogai-core",
+  "name": "core",
   "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
   "description": "core plugins for skogai",
   "owner": {
@@ -33,6 +33,16 @@
       "description": "Reusable Claude Code lifecycle hooks (session, tool guards, stop gates)",
       "category": "automation",
       "strict": false
+    },
+    {
+      "name": "skogai-core",
+      "source": "./",
+      "version": "0.0.2",
+      "description": "the main parts that makes skogai work",
+      "category": "core",
+      "strict": false,
+      "agents": ["./agents/schema-converter.md"],
+      "skills": ["./skills/skogai-core", "./skills/skogai-hook-debugging"]
     }
   ]
 }
