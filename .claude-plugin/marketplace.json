@@ -19,22 +19,6 @@
       "strict": false
     },
     {
-      "name": "skogai-jq",
-      "source": "./plugins/skogai-jq",
-      "version": "0.0.2",
-      "description": "Schema-driven jq/JSON transformation library",
-      "category": "data",
-      "strict": false
-    },
-    {
-      "name": "skogai-hooks",
-      "source": "./plugins/skogai-hooks",
-      "version": "0.0.2",
-      "description": "Reusable Claude Code lifecycle hooks (session, tool guards, stop gates)",
-      "category": "automation",
-      "strict": false
-    },
-    {
       "name": "skogai-core",
       "source": "./",
       "version": "0.0.2",
