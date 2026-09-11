@@ -45,6 +45,7 @@ Ask a question only when two routes would produce meaningfully different files.
 | Create a reference endpoint      | `workflows/write-reference.md`          |
 | Create or revise templates       | `workflows/write-template.md`           |
 | Add helper scripts or checks     | `workflows/write-script.md`             |
+| Create an argc CLI script        | `workflows/write-argc-file.md`          |
 | Audit framework structure        | `workflows/audit-framework.md`          |
 | Validate files against schemas   | `workflows/validate-schema.md`          |
 | Browse schema definitions        | `schemas/README.md`                     |
