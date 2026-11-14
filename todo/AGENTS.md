@@ -27,7 +27,7 @@ dot-core/
 | Hook implementation | `hooks/`                    | Shell routers and Python matcher |
 | Shared hook helpers | `scripts/skogai-jq.sh`      | JSON field/log/output helpers    |
 | Skill work          | `skills/`                   | See local skills AGENTS          |
-| jq transforms       | `skills/skogai-jq/`         | Dense self-contained subtree     |
+| jq transforms       | `skills/skogai-jq/README.md` | Moved to `skogai/skogai-jq`        |
 | Tests               | `tests/`                    | Bats with shared helper          |
 
 ## CONVENTIONS
